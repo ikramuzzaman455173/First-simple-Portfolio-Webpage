@@ -108,6 +108,23 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 50rem;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--white);
+  border-radius: 50rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 body {
   background-color: var(--bg);
 }
