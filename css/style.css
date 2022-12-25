@@ -320,7 +320,9 @@ section {
   padding-left: 1rem;
   color: var(--secondary);
 }
-
+.btn i:hover{
+  color:var(--main)
+}
 .btn:hover {
   letter-spacing: 3px;
   border-radius: .5rem;
@@ -520,7 +522,7 @@ section {
   flex: 50rem;
   padding: 2rem;
   margin: 2rem;
-  margin-bottom:10rem;
+  margin-bottom: 10rem;
 }
 
 .row form .box {
@@ -553,7 +555,7 @@ section {
 
 /* *<===footer section styles===>* */
 footer {
-  width:80%;
+  width: 80%;
   background: var(--bg);
   padding: 1rem;
   position: fixed;
@@ -596,18 +598,22 @@ footer .h4 .span {
   .wrapper {
     padding-left: 0;
   }
-  footer{
-    width:100%;
+
+  footer {
+    width: 100%;
   }
+
   .home {
     padding: 0 3rem;
   }
 
-  .nav {
+  .nav{
     left: -30rem;
     transition: all .5s ease-in-out;
   }
-
+  .nav.active{
+    left:0;
+  }
   .education .box-container .box {
     width: 27rem;
   }
@@ -642,8 +648,9 @@ nav.toggle {
     border: .5rem solid var(--main);
     border-radius: .5rem;
   }
-  #loading{
-    background-size:200px 200px;
+
+  #loading {
+    background-size: 200px 200px;
   }
 }
 
